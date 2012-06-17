@@ -240,6 +240,13 @@ namespace GitCommands
             set { SafeSet("revisiongraphshowworkingdirchanges", value, ref _revisionGraphShowWorkingDirChanges); }
         }
 
+        private static bool? _PlaySpecialStartupSound;
+        public static bool PlaySpecialStartupSound
+        {
+            get { return SafeGet("PlaySpecialStartupSound", false, ref _PlaySpecialStartupSound); }
+            set { SafeSet("PlaySpecialStartupSound", value, ref _PlaySpecialStartupSound); }
+        }
+
         private static bool? _DirtyDirWarnBeforeCheckoutBranch;
         public static bool DirtyDirWarnBeforeCheckoutBranch
         {

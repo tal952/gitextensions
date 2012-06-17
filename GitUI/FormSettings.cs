@@ -336,6 +336,8 @@ namespace GitUI
                 chkWarnBeforeCheckout.Checked = Settings.DirtyDirWarnBeforeCheckoutBranch;
                 chkStartWithRecentWorkingDir.Checked = Settings.StartWithRecentWorkingDir;
 
+                chkPlaySpecialStartupSound.Checked = Settings.PlaySpecialStartupSound;
+
                 chkUsePatienceDiffAlgorithm.Checked = Settings.UsePatienceDiffAlgorithm;
 
                 chkShowCurrentBranchInVisualStudio.Checked = Settings.ShowCurrentBranchInVisualStudio;
@@ -546,6 +548,8 @@ namespace GitUI
 
             Settings.DirtyDirWarnBeforeCheckoutBranch = chkWarnBeforeCheckout.Checked;
             Settings.StartWithRecentWorkingDir = chkStartWithRecentWorkingDir.Checked;
+
+            Settings.PlaySpecialStartupSound = chkPlaySpecialStartupSound.Checked;
 
             Settings.UsePatienceDiffAlgorithm = chkUsePatienceDiffAlgorithm.Checked;
 

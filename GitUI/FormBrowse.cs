@@ -209,7 +209,7 @@ namespace GitUI
 
             try
             {
-                if (Settings.IconStyle.Equals("Cow", StringComparison.CurrentCultureIgnoreCase))
+                if (Settings.PlaySpecialStartupSound)
                 {
                     new System.Media.SoundPlayer(Properties.Resources.cow_moo).Play();
                 }
